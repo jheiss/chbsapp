@@ -1,5 +1,106 @@
-<ul>
-<% @passwords.each do |password| %>
-  <li><%= password %></li>
-<% end %>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>chbs</title>
+  <link href="jquery-ui.min.css" rel="stylesheet">
+  <link href="jquery.ui.slider.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="chbsapp.css" rel="stylesheet">
+  <!-- favicon -->
+</head>
+<body>
+  <div class="container">
+    <div class="span8 offset2">
+      <div id="hero" class="hero-unit">
+        <table id="passphrases" class="table table-striped table-hover">
+          <tbody>
+          </tbody>
+        </table>
+        <div id="buttons" class="offset1">
+          <a id="generate_btn" class="btn btn-primary btn-large">Generate Passphrases</a>
+          <a id="options_btn" class="btn btn-large">Options</a>
+        </div>
+        <!-- Hidden advanced options box -->
+        <div id="options">
+          <form id="options_form" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label" for="corpus">Corpus</label>
+              <div class="controls">
+                <% @corpora.each do |corpus| %>
+                  <label class="radio inline">
+                    <input type="radio" name="corpus" id="corpus_<%= corpus %>" value="<%= corpus %>" <%= corpus == 'tv-and-movies' ? 'checked' : '' %>>
+                    <%= corpus %>
+                  </label>
+                <% end %>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="min_length">Min word length</label>
+              <div class="controls">
+                <input type="text" id="min_length" name="min_length" class="span1">
+                <div id="min_length_slider"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="max_length">Max word length</label>
+              <div class="controls">
+                <input type="text" id="max_length" name="max_length" class="span1">
+                <div id="max_length_slider"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="min_rank">Min word popularity</label>
+              <div class="controls">
+                <input type="text" id="min_rank" name="min_rank" class="span1">
+                <div id="min_rank_slider"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="max_rank">Max word popularity</label>
+              <div class="controls">
+                <input type="text" id="max_rank" name="max_rank" class="span1">
+                <div id="max_rank_slider"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="num_words"># of words</label>
+              <div class="controls">
+                <input type="text" id="num_words" name="num_words" class="span1">
+                <div id="num_words_slider"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="separator">Separator</label>
+              <div class="controls">
+                <input type="text" id="separator" name="separator" value="-" class="span1">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="count">Number of passphrases</label>
+              <div class="controls">
+                <input type="number" id="count" name="count" value="5" class="span1">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="credits">
+    Credits:<br/>
+    <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> |
+    <a href="http://glyphicons.com/">GLYPHICONS</a> |
+    <a href="http://jquery.org/">jQuery</a> |
+    <a href="http://jqueryui.com/">jQuery UI</a> |
+    <a href="http://jonrohan.github.com/ZeroClipboard/">Zero Clipboard</a>
+  </div>
+  
+  <script src="jquery-1.8.2.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="jquery.ui.slider.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="ZeroClipboard.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

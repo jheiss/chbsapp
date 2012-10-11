@@ -1,0 +1,23 @@
+#options {
+  display: none;
+  background-color: LightGray;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+#hero {
+  margin-top: 40px;
+}
+#buttons {
+  margin-top: 30px;
+}
+.td_button {
+  width: 35px;
+}
+div.passphrase {
+  font-size: 110%;
+  margin-top: 2px;
+}
+#credits {
+  text-align: center;
+}
