@@ -29,10 +29,9 @@ get '/passphrases' do
   count = 5
   if params['count']
     pcount = params['count'].to_i
-    # Don't let the user ask us to do infinite work
-    if [1..20].include?(pcount)
-      count = pcount
-    end
+    # Constrain the count to 1-20.  Don't let the user ask us to do infinite
+    # work.
+    count = [1,[20,pcount].min].max
   end
   chbs = Chbs::Generator.new(options)
   passphrases = []
