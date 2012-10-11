@@ -1,4 +1,5 @@
 require 'chbs'
+require 'coffee-script'
 require 'json'
 require 'sinatra'
 
