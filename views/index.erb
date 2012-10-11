@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <title>chbs</title>
-  <link href="jquery-ui.min.css" rel="stylesheet">
-  <link href="jquery.ui.slider.min.css" rel="stylesheet">
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="chbsapp.css" rel="stylesheet">
   <!-- favicon -->
@@ -37,48 +35,43 @@
             <div class="control-group">
               <label class="control-label" for="min_length">Min word length</label>
               <div class="controls">
-                <input type="text" id="min_length" name="min_length" class="span1">
-                <div id="min_length_slider"></div>
+                <input type="number" id="min_length" name="min_length" value="4" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="max_length">Max word length</label>
               <div class="controls">
-                <input type="text" id="max_length" name="max_length" class="span1">
-                <div id="max_length_slider"></div>
+                <input type="number" id="max_length" name="max_length" value="10" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="min_rank">Min word popularity</label>
               <div class="controls">
-                <input type="text" id="min_rank" name="min_rank" class="span1">
-                <div id="min_rank_slider"></div>
+                <input type="number" id="min_rank" name="min_rank" value="1" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="max_rank">Max word popularity</label>
               <div class="controls">
-                <input type="text" id="max_rank" name="max_rank" class="span1">
-                <div id="max_rank_slider"></div>
+                <input type="number" id="max_rank" name="max_rank" value="10000" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="num_words"># of words</label>
               <div class="controls">
-                <input type="text" id="num_words" name="num_words" class="span1">
-                <div id="num_words_slider"></div>
+                <input type="number" id="num_words" name="num_words" value="4" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="separator">Separator</label>
               <div class="controls">
-                <input type="text" id="separator" name="separator" value="-" class="span1">
+                <input type="text" id="separator" name="separator" value="-" class="span2">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label" for="count">Number of passphrases</label>
               <div class="controls">
-                <input type="number" id="count" name="count" value="5" class="span1">
+                <input type="number" id="count" name="count" value="5" class="span2">
               </div>
             </div>
           </form>
@@ -92,13 +85,10 @@
     <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> |
     <a href="http://glyphicons.com/">GLYPHICONS</a> |
     <a href="http://jquery.org/">jQuery</a> |
-    <a href="http://jqueryui.com/">jQuery UI</a> |
     <a href="http://jonrohan.github.com/ZeroClipboard/">Zero Clipboard</a>
   </div>
   
   <script src="jquery-1.8.2.min.js"></script>
-  <script src="jquery-ui.min.js"></script>
-  <script src="jquery.ui.slider.min.js"></script>
   <script src="bootstrap.min.js"></script>
   <script src="ZeroClipboard.min.js"></script>
   <script src="index.js"></script>
