@@ -11,6 +11,8 @@ included, if you want your passwords to have a bit more of an old-timey feel.
 
 A working installation can be found at http://chbsapp.herokuapp.com/
 
+See https://github.com/jheiss/chbs for the corresponding library and command line client.
+
 ## Running in development
 
 * Clone this repo
