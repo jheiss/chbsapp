@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '~> 2.5.0'
+
 gem 'chbs', '~> 0.0.9'
 gem 'coffee-script', '~> 2.4.0'
 gem 'sinatra', '~> 2.0.4'
