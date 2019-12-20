@@ -9,19 +9,19 @@ GEM
     execjs (2.7.0)
     libv8 (3.16.14.19)
     mustermann (1.0.3)
-    rack (2.0.6)
-    rack-protection (2.0.4)
+    rack (2.0.8)
+    rack-protection (2.0.7)
       rack
     ref (2.0.0)
-    sinatra (2.0.4)
+    sinatra (2.0.7)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.4)
+      rack-protection (= 2.0.7)
       tilt (~> 2.0)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
-    tilt (2.0.8)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -36,4 +36,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
