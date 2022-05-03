@@ -8,15 +8,17 @@ GEM
     coffee-script-source (1.12.2)
     execjs (2.7.0)
     libv8 (3.16.14.19)
-    mustermann (1.0.3)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
-    rack-protection (2.0.7)
+    rack-protection (2.2.0)
       rack
     ref (2.0.0)
-    sinatra (2.0.7)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.7)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
@@ -29,7 +31,7 @@ PLATFORMS
 DEPENDENCIES
   chbs (~> 0.0.9)
   coffee-script (~> 2.4.0)
-  sinatra (~> 2.0.4)
+  sinatra (~> 2.2.0)
   therubyracer (~> 0.12.0)
 
 RUBY VERSION
