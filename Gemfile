@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.5.0'
+ruby '~> 3.2.0'
 
 gem 'chbs', '~> 0.0.9'
-gem 'coffee-script', '~> 2.4.0'
-gem 'sinatra', '~> 2.2.3'
-gem 'therubyracer', '~> 0.12.0'
+gem 'sinatra', '~> 3.1.0'
+gem 'webrick'
 # For production deployments:
 #gem 'unicorn'

@@ -1,5 +1,4 @@
 require 'chbs'
-require 'coffee-script'
 require 'json'
 require 'sinatra'
 
@@ -11,9 +10,6 @@ end
 get '/' do
   @corpora = Chbs.included_corpora
   erb :index
-end
-get '/index.js' do
-  coffee :index
 end
 get '/passphrases' do
   options = {}
