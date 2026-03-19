@@ -1,6 +1,7 @@
 # chbs
 
-A web UI implementation of https://xkcd.com/936/
+A web UI implementation of the xkcd
+[correct horse battery staple](https://xkcd.com/936/) password generator.
 
 I.e. pick four random, common words and string them together to make a very
 strong but easy to remember password.
@@ -9,7 +10,7 @@ The default corpus (word list) contains the most common words in TV and movie
 scripts. A corpus of the most common words from Project Gutenberg is also
 included, if you want your passwords to have a bit more of an old-timey feel.
 
-A working installation can be found at https://chbsapp.herokuapp.com/
+A working installation can be found at https://chbs.app/
 
 See https://github.com/jheiss/chbs for the corresponding library and command line client.
 
@@ -24,9 +25,8 @@ See https://github.com/jheiss/chbs for the corresponding library and command lin
 There are many ways to deploy a production Sinatra app, here's one:
 
 * Clone this repo
-* Uncomment unicorn in Gemfile
-* Run `bundle`
-* Run `unicorn -E production`
+* Run `bundle install --with production`
+* Run `bundle exec unicorn -E production`
 
 ## Contributing
 
