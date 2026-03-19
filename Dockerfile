@@ -14,6 +14,7 @@ WORKDIR /chbsapp
 
 # We want the "production" group in Gemfile installed
 RUN bundle config set with production
+RUN bundle config set without development
 # We want bundler to install gems in the local directory
 RUN bundle config set deployment true
 RUN bundle install
