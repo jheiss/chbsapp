@@ -18,7 +18,7 @@ get '/passphrases' do
       options[int] = params[int.to_s].to_i
     end
   end
-  [:separator].each do |str|
+  [:corpus, :separator].each do |str|
     if params[str.to_s]
       options[str] = params[str.to_s]
     end
